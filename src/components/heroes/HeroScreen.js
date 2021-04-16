@@ -24,7 +24,7 @@ export const HeroScreen = ({history}) => {
             <h1>HeroScreen</h1>
             <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center animate__animated animate__fadeIn">
                 <div className="w-25 m-1 m-md-3" style={{minWidth: 300}}>
-                    <img src={`%PUBLIC_URL%/assets/heroes/${hero.id}.jpg`} alt="..." className="img-fluid" />
+                    <img src={`${process.env.PUBLIC_URL}/assets/heroes/${hero.id}.jpg`} alt="..." className="img-fluid" />
                 </div>
                 <div className="v-25 m-1 m-md-3 d-flex flex-column justify-content-center align-items-center">
                     <h3>{hero.superhero}</h3>

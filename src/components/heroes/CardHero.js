@@ -5,7 +5,7 @@ export const CardHero = ({heroe: hero}) => {
     return (
         <div className="row g-0 border border-2 rounded animate__animated animate__fadeIn">
             <div className="col-5">
-                <img src={`%PUBLIC_URL%/assets/heroes/${hero.id}.jpg`} alt="..." className="card-img" />
+                <img src={`${process.env.PUBLIC_URL}/assets/heroes/${hero.id}.jpg`} alt="..." className="card-img" />
             </div>
             <div className="col-7">
                 <div className="card-body h-100 d-flex flex-column align-items-center justify-content-center">
